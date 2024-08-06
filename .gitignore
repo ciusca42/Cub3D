@@ -1,3 +1,7 @@
+# personal ignores
+mlx/
+cub3D
+
 # Prerequisites
 *.d
 
