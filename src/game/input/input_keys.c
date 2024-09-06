@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 18:54:57 by ciusca            #+#    #+#             */
-/*   Updated: 2024/08/03 16:42:20 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 11:27:46 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	gui_keys(int pressed, t_keys *key)
 
 int	key_press(int pressed, t_keys *key)
 {
+	printf("click %d\n", pressed);
 	if (pressed == w)
 		key->w = 1;
 	else if (pressed == s)

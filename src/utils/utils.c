@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 11:58:47 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/26 14:15:56 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 12:03:08 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,29 @@ time_t	get_curr_time(time_t initial_time)
 	return (curr_time - initial_time);
 }
 
+int	on_click(int m_key, int x, int y,  t_cubed *cubed)
+{
+	(void)x;
+	(void)y;
+	//printf("hello im pressed\n");
+	//printf("%p\n", cubed->player);
+	if (cubed->keys->mouse_l == 0)
+		cubed->start_shoot = get_time();
+	if (m_key == 1)
+		cubed->keys->mouse_l = 1;
+	else if (m_key == 3)
+		cubed->keys->mouse_r = 1;
+	return (1);	
+}
+
 void	mask_manager(t_cubed *cubed)
 {
+	
+	mlx_hook(cubed->win, ButtonPress, ButtonPressMask, &on_click, cubed);
 	mlx_hook(cubed->win, KeyPress, KeyPressMask, &key_press, cubed->keys);
 	mlx_hook(cubed->win, KeyRelease, KeyReleaseMask, &key_release, cubed->keys);
 	mlx_hook(cubed->win, DestroyNotify, StructureNotifyMask, &ft_close, cubed);
+	//mlx_mouse_hook(cubed->win, &mouse_press, cubed);
 }
 
 void	draw_shape(t_img *img, double x, double y, int size)

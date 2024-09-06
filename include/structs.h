@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 10:50:43 by nromito           #+#    #+#             */
-/*   Updated: 2024/09/06 09:08:09 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 12:29:09 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,8 @@ typedef struct s_keys
 	int	shift;
 	int	page_up;
 	int	page_down;
+	int mouse_l;
+	int mouse_r;
 }				t_keys;
 
 /* struct that stores the player's position and direction */
@@ -157,7 +159,9 @@ typedef struct s_cubed
 	t_img		texture[5];
 	t_img		door_anim[FRAME_NUMBER];
 	time_t		time;
-	t_img		weapon[1];
+	t_img		gun[4];
+	long long	start_shoot;
+	t_img		*curr_gun;
 	t_raycast	*raycast;
 	t_game		*game;
 	t_keys		*keys;

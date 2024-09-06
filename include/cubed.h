@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 12:16:21 by nromito           #+#    #+#             */
-/*   Updated: 2024/09/06 09:11:12 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 11:46:48 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,6 +133,8 @@ void	load_texture(t_cubed *cubed);
  *========================**/
 int		ft_close(t_cubed *cubed, int err_status);
 int		ft_error(char *error, t_cubed *cubed);
+
+int	on_click(int m_key, int x, int y, t_cubed *cubed);
 
 /**======================
  *?    		UTILS

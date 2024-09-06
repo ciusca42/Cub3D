@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   close_and_err.c                                    :+:      :+:    :+:   */
+/*   close_and_err_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 12:10:47 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/05 19:59:13 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 10:32:32 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ int	free_texture(t_cubed *cubed)
 		if (cubed->door_anim[i].img)
 			mlx_destroy_image(cubed->mlx, cubed->door_anim[i].img);
 	}
-	if (cubed->weapon[0].img)
-		mlx_destroy_image(cubed->mlx, cubed->weapon[0].img);
+	if (cubed->gun[0].img)
+		mlx_destroy_image(cubed->mlx, cubed->gun[0].img);
 	return (1);
 }
 

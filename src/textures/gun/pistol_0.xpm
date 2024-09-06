@@ -1,5 +1,5 @@
 /* XPM */
-static char *base_pistol[] = {
+static char *pistol_0[] = {
 /* columns rows colors chars-per-pixel */
 "448 448 26 1 ",
 "  c black",
