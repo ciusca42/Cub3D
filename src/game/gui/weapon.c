@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 18:32:47 by ciusca            #+#    #+#             */
-/*   Updated: 2024/09/06 12:14:39 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 15:32:44 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	shoot_animation(t_cubed *cubed, long long elapsed)
 {
 	static int 	frame = 0;
     static long long last_update = 0;
-    const long long fast_frame_duration = 1; // Duration for the first 2 frames in milliseconds
-    const long long normal_frame_duration = 50; // Duration for the remaining frames in milliseconds
+    const long long fast_frame_duration = 1;
+    const long long normal_frame_duration = 50;
 	long long frame_duration;
 
     if (!cubed->keys->mouse_l)
