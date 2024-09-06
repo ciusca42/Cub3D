@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nromito <nromito@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 11:50:29 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/06 12:05:20 by nromito          ###   ########.fr       */
+/*   Updated: 2024/08/26 13:17:33 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ int	init_data(t_cubed *cubed)
 	cubed->gui = malloc(sizeof(t_gui));
 	cubed->gui->open_door = 0;
 	cubed->gui->close_door = 0;
+	cubed->gui->weapon_x = 650;
+	cubed->gui->weapon_y = 115;
 	init_settings(cubed);
 	init_texture(cubed);
 	init_player(cubed);

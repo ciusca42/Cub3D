@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 11:58:47 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/06 19:26:53 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/08/26 14:15:56 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	draw_shape(t_img *img, double x, double y, int size)
 	int	i;
 	int	j;
 	int	start_x;
-	
+
 	start_x = x;
 	j = -1;
 	while (++j < size)

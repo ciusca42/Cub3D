@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 12:16:21 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/06 16:36:59 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 09:11:12 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,5 +146,6 @@ int		validate_position(t_cubed *cubed, double dist, double dir);
 clock_t	get_curr_time(time_t initial_time);
 void	mask_manager(t_cubed *cubed);
 void	error_msg(t_cubed *cubed, char *msg, char **matrix);
+long long get_time();
 
 #endif

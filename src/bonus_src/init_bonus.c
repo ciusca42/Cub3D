@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init.c                                             :+:      :+:    :+:   */
+/*   init_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 11:50:29 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/05 19:28:59 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 08:49:50 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	init_texture(t_cubed *cubed)
 	cubed->weapon[0].w = WIDTH;
 	cubed->weapon[0].h = HEIGHT;
 	cubed->weapon[0].img = mlx_xpm_file_to_image(cubed->mlx,
-			"src/textures/weapon.xpm",
+			"src/textures/gun/base_pistol.xpm",
 			&cubed->weapon[0].w, &cubed->weapon[0].h);
 	return (0);
 }
@@ -83,6 +83,7 @@ int	init_data(t_cubed *cubed)
 	cubed->gui = malloc(sizeof(t_gui));
 	cubed->gui->open_door = 0;
 	cubed->gui->close_door = 0;
+	cubed->gui->weapon_y = 80;
 	init_settings(cubed);
 	init_texture(cubed);
 	init_player(cubed);

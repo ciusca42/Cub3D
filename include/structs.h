@@ -6,7 +6,7 @@
 /*   By: ciusca <ciusca@student.42firenze.it>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 10:50:43 by nromito           #+#    #+#             */
-/*   Updated: 2024/08/05 18:36:43 by ciusca           ###   ########.fr       */
+/*   Updated: 2024/09/06 09:08:09 by ciusca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,6 +139,8 @@ typedef struct s_gui
 {
 	int		open_door;
 	int		close_door;
+	int		weapon_x;
+	int		weapon_y;
 }			t_gui;
 
 /* main struct */
@@ -149,6 +151,7 @@ typedef struct s_cubed
 	char		**map;
 	void		*mlx;
 	void		*win;
+	long long	initial_time;
 	t_img		*img;
 	t_player	*player;
 	t_img		texture[5];
