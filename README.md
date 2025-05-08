@@ -4,7 +4,7 @@
 Cub3D is a minimalist raycasting-based 3D game engine developed in C, inspired by the classic *Wolfenstein 3D*.  
 Created as part of the École 42 curriculum, this project offers an immersive first-person experience within a maze-like environment, utilizing the MiniLibX graphics library.
 
-![Cub3D Screenshot](images/9615b7c6-2ec8-42db-b768-18f9891b34cd.png)
+![Cub3D Screenshot](image/9615b7c6-2ec8-42db-b768-18f9891b34cd.png)
 
 > 📸 *Screenshot from the actual project.*
 
