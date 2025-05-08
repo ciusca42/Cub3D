@@ -50,11 +50,7 @@ void	y_loop(t_cubed *cubed, t_wall *wall, t_img *texture)
 t_img	*assign_texture(t_cubed *cubed, int flag)
 {
 	t_img	*texture;
-	int		ry;
-	int		rx;
 
-	ry = (int)cubed->raycast->ry / TILE_SIZE;
-	rx = (int)cubed->raycast->rx / TILE_SIZE;
 	if (flag == 0)
 		texture = &cubed->texture[0];
 	else if (flag == 1)
